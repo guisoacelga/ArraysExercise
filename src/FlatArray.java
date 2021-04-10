@@ -15,6 +15,8 @@ public class FlatArray {
     public static int[] getFlatArray(int[][] numbers) {
         int i=0;
         int uniLength = (numbers.length * numbers[0].length);
+        // para averiguar el largo que debe tener el array unidimensional
+
         int[] uni = new int[uniLength];
 
         for (int y = 0; y < numbers.length; y++) {
