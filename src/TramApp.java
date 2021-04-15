@@ -9,7 +9,6 @@ public class TramApp {
         int[] durationArray = new int[] {12,23,14,15,26,18,19};
 
         for (int i = 0; i < stationArray.length; i++) {
-
             durationToDestination(stationArray[i], stationProblemArray[i], durationArray[i]);
         }
 

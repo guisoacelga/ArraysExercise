@@ -2,7 +2,9 @@ public class FlatArray {
     public static void main(String[] args) {
         System.out.println("Hello! I am going to turn a 2d array into a 1d array!!*****");
 
+        //declaration of 2d array
         int [] [] numbers = {{0,1,9}, {6,3,2}};
+
         for (int i = 0; i < getFlatArray(numbers).length ; i++) {
             if (i==getFlatArray(numbers).length-1){
                 System.out.print(getFlatArray(numbers)[i] + ".");
@@ -16,7 +18,9 @@ public class FlatArray {
         int i=0;
         int uniLength = (numbers.length * numbers[0].length);
         // para averiguar el largo que debe tener el array unidimensional
+        //como el otro arreglo es 2d se debe multiplicar el total de filas * columnas
 
+        //declaración del arreglo 1d con el largo total
         int[] uni = new int[uniLength];
 
         for (int y = 0; y < numbers.length; y++) {
